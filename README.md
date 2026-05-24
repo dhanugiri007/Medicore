@@ -4,6 +4,11 @@ A full-stack hospital management system built with **Node.js**, **Express**, and
 
 ---
 
+## Live Link
+https://medicore-f5jk.onrender.com/
+
+---
+
 ## Features
 
 - **Auth System** — Register, login, logout with JWT stored in HTTP-only cookies. Token blacklisting on logout.
