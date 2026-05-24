@@ -1,4 +1,4 @@
-# Medicore 🏥
+# Medicore 
 
 A full-stack hospital management system built with **Node.js**, **Express**, and **MongoDB**. Medicore handles the complete patient journey — from registration and appointment booking to prescriptions and billing — with role-based access for patients, doctors, and admins.
 
@@ -131,16 +131,26 @@ Open your browser at `http://localhost:3000`.
 
 All protected routes require a valid JWT cookie (set automatically on login). Include `credentials: 'include'` in frontend fetch calls.
 
-### Auth — `/api/auth`
+## Auth API
+
+Base URL: `/api/auth`
+
+### Endpoints
 
 | Method | Endpoint | Description |
-|--------|----------|------|-------------|
-| POST | `/api/auth/register`| Register a new user |
-| POST | `/api/auth/login` | Login and receive JWT cookie |
-| POST | `/api/auth/logout` | Logout and blacklist token |
-| GET | `/api/auth/me` | Get current logged-in user |
+|------|---------|------------|
+| POST | `/api/auth/register` | Register a new user |
+| POST | `/api/auth/login` | Login user and receive JWT cookie |
+| POST | `/api/auth/logout` | Logout user and blacklist token |
+| GET | `/api/auth/me` | Get currently logged-in user |
 
-**Register body:**
+---
+
+### Register User
+
+**POST** `/api/auth/register`
+
+#### Request Body
 ```json
 {
   "name": "John Doe",
@@ -149,7 +159,6 @@ All protected routes require a valid JWT cookie (set automatically on login). In
   "role": "patient",
   "phone": "9876543210"
 }
-```
 
 ---
 
