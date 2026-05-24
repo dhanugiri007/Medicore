@@ -159,8 +159,9 @@ Base URL: `/api/auth`
   "role": "patient",
   "phone": "9876543210"
 }
-
+```
 ---
+
 
 ### Patient — `/api/patient` *(patient only)*
 
@@ -187,7 +188,6 @@ Base URL: `/api/auth`
   }
 }
 ```
-
 ---
 
 ### Appointments — `/api/appointment` *(patient only)*
