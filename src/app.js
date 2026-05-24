@@ -9,6 +9,7 @@ const billRouter = require('./routes/billing.route');
 const doctorRouter = require('./routes/doctor.route');
 const doctorAppointmentRouter = require('./routes/doctor.appointment.route');
 const doctorPrescriptionRouter = require('./routes/doctor.prescription.route');
+const doctorBillingRouter = require('./routes/doctor.billing.route');
 
 const app = express();
 
@@ -24,5 +25,7 @@ app.use('/api/bill',billRouter);
 app.use('/api/doctor',doctorRouter);
 app.use('api/doctor/appointments',doctorAppointmentRouter);
 app.use('/api/doctor/prescriptions',doctorPrescriptionRouter);
+app.use('/api/doctor/bill',doctorBillingRouter);
+
 
 module.exports = app;
